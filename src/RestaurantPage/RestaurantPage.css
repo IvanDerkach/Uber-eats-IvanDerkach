@@ -1,0 +1,31 @@
+.restaurantPage__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.restaurantPage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: center;
+  width: 956px;
+}
+
+.restaurantPage__title {
+  font-family: var(--main-font);
+  font-size: 22px;
+  line-height: 34px;
+  color: var(--font-color);
+  align-self: flex-start;
+  margin: 56px 0 16px;
+}
+
+.restaurantPage__list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+}
