@@ -1,4 +1,5 @@
 import React from 'react';
+import {Search} from "../Search/Search.jsx";
 import './main-section.css';
 import './main-section_card.css';
 import {Link} from "react-router-dom";
@@ -10,11 +11,7 @@ export function MainSection() {
   return (
     <div className="cards">
       <div className="cards_wrapper">
-        <div className="search_wrapper">
-          <label className="search__label">
-            <input type="text" className="search" placeholder="Search for restaurant or cuisine"/>
-          </label>
-        </div>
+        <Search/>
 
         <span className="cards__title">Kyiv Restaurants</span>
 
