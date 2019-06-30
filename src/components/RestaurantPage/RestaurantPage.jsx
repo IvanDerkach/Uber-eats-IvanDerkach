@@ -1,11 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import './restaurant.css';
-import './restaurant-menu.css';
+import './RestaurantPresentation/RestaurantPresentation.css';
+import './RestaurantMenu/RestaurantMenu.css';
 import './RestaurantPage.css';
-import './ProductCard.css';
+import './ProductCard/ProductCard.css';
 import appetizer1 from './img/appetizer_1.png';
-import {ProductUnit} from "./ProductUnit.jsx";
+import {ProductUnit} from "./ProductCard/ProductUnit.jsx";
+import {RestaurantMenu} from "./RestaurantMenu/RestaurantMenu.jsx";
+import {RestaurantPresentation} from "./RestaurantPresentation/RestaurantPresentation.jsx";
 
 export function RestaurantPage() {
   const productUnits = [
@@ -27,40 +29,8 @@ export function RestaurantPage() {
   ];
   return (
     <>
-      <div className="restaurant-card__background">
-        <div className="restaurant-card__wrapper">
-          <div className="restaurant-card">
-            <span className="restaurant-card__title">Трактир «Пушкин»</span>
-            <div className="restaurant-card__footer">
-              <span className="restaurant-card__price">₴₴₴ • Европейская</span>
-              <span className="restaurant-card__time">40 - 50 Min</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <nav className="restaurant-menu">
-        <ul className="nav__menu">
-          <li>
-            <Link to="/" className="nav__menu__item"> Закуски </Link>
-          </li>
-          <li>
-            <Link to="/" className="nav__menu__item"> Салаты </Link>
-          </li>
-          <li>
-            <Link to="/" className="nav__menu__item"> Супы </Link>
-          </li>
-          <li>
-            <Link to="/" className="nav__menu__item"> Горячие блюда </Link>
-          </li>
-          <li>
-            <Link to="/" className="nav__menu__item"> Гарниры </Link>
-          </li>
-          <li>
-            <Link to="/" className="nav__menu__item"> Десерты </Link>
-          </li>
-        </ul>
-      </nav>
+      <RestaurantPresentation/>
+      <RestaurantMenu/>
 
       <div className="restaurantPage__wrapper">
         <div className="restaurantPage">

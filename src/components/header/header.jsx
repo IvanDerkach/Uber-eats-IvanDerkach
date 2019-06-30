@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import '../button/button.css';
+import '../Button/button.css';
 import logo from './img/uber_eats_logo.svg';
 import basket from './img/basket.svg';
 

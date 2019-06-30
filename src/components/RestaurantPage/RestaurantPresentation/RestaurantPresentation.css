@@ -1,5 +1,5 @@
-.restaurant-card__background {
-  background: url("./img/rest_background.png") no-repeat center;
+.restaurantPresentation-card__background {
+  background: url("../img/rest_background.png") no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -7,11 +7,11 @@
   padding: 0;
 }
 
-.restaurant-card__wrapper {
+.restaurantPresentation-card__wrapper {
   width: 956px;
 }
 
-.restaurant-card {
+.restaurantPresentation-card {
   background-color: var(--white);
   box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
   border-radius: 2px;
@@ -26,28 +26,28 @@
   justify-content: space-between;
 }
 
-.restaurant-card__title {
+.restaurantPresentation-card__title {
   font-family: var(--main-font);
   font-size: 36px;
   line-height: 42px;
   color: var(--font-color);
 }
 
-.restaurant-card__footer {
+.restaurantPresentation-card__footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.restaurant-card__price {
+.restaurantPresentation-card__price {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 16px;
   color: var(--gray);
 }
 
-.restaurant-card__time {
+.restaurantPresentation-card__time {
   font-family: var(--main-font);
   font-size: 13px;
   line-height: 15px;
