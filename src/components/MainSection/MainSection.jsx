@@ -3,7 +3,7 @@ import {Search} from "../Search/Search.jsx";
 import './MainSection.css';
 import './MainSectionCard.css';
 import {restaurants} from "./restaurants-info.js";
-import {RestaurantCard} from "../restaurant_card/restaurant_card.jsx";
+import {RestaurantCard} from "../RestaurantCard/RestaurantCard.jsx";
 
 
 export function MainSection() {

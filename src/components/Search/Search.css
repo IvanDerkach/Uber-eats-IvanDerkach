@@ -1,4 +1,8 @@
 .search {
+    position: relative;
+}
+
+.search__input {
     width: 956px;
     height: 79px;
     border: none;
@@ -6,10 +10,6 @@
     padding: 30px 0 0 30px;
     box-sizing: border-box;
     outline: none;
-}
-
-.search_wrapper {
-    position: relative;
 }
 
 .search__label {
