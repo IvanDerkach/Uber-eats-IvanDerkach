@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Header} from "./components/header/header.jsx";
-import {MainSection} from "./components/main-section/main-section.jsx";
+import {MainSection} from "./components/MainSection/MainSection.jsx";
 import {Footer} from "./components/footer/footer";
 import {RestaurantPage} from "./components/RestaurantPage/RestaurantPage.jsx";
 import {BrowserRouter as Router, Route} from "react-router-dom";
