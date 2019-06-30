@@ -1,10 +1,34 @@
-.menu-card {
+.product-card__title {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.product-card__consist {
+  font-family: var(--main-font);
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--gray);
+  height: 80px;
+}
+
+.product-card__price {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--font-color);
+}
+
+.product-card {
   width: 470px;
   height: 160px;
   padding: 0 0 32px;
 }
 
-.menu-link {
+.product-card__link {
   width: 470px;
   height: 160px;
   border: 1px solid rgba(117, 117, 117, 0.2);
@@ -15,38 +39,16 @@
   text-decoration: none;
 }
 
-.menu-card__left {
+.product-card__left {
   padding: 16px 0 16px 16px;
   display: flex;
   flex-direction: column;
 }
 
-.menu-card__title {
-  font-family: var(--main-font);
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--font-color);
-  text-decoration: none;
-}
-
-.menu-card__consist {
-  font-family: var(--main-font);
-  font-size: 13px;
-  line-height: 21px;
-  color: var(--gray);
-  height: 80px;
-}
-
-.menu-card__price {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 21px;
-  color: var(--font-color);
-}
-
-.menu-card:hover {
+.product-card:hover {
   background: var(--hover);
 }
+
+
 
 
