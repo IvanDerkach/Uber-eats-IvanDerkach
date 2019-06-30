@@ -1,7 +1,7 @@
 import React from 'react';
 import {Search} from "../Search/Search.jsx";
-import './main-section.css';
-import './main-section_card.css';
+import './MainSection.css';
+import './MainSectionCard.css';
 import {restaurants} from "./restaurants-info.js";
 import {RestaurantCard} from "../restaurant_card/restaurant_card.jsx";
 
