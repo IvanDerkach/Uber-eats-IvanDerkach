@@ -9,7 +9,7 @@ export function ProductCard(props) {
     imageUrl,
     price,
     itemDescription
-  } = props.restaurant;
+  } = props.restaurant.sections;
   let prices = price / 100;
 
   return (
