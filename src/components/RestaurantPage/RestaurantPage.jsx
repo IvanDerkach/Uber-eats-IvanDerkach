@@ -14,7 +14,7 @@ export function RestaurantPage() {
       <RestaurantPresentation />
       <RestaurantMenu />
 
-      <div className="restaurant-page__wrapper">
+      <div className='restaurant-page__wrapper'>
         <div className="restaurant-page">
           <span className="restaurant-page__title">Закуски</span>
           <ul className="restaurant-page__list">
