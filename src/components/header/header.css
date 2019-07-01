@@ -1,89 +1,89 @@
 .delivery-info {
-    display: flex;
-    width: 390px;
+  display: flex;
+  width: 390px;
 }
 
 .header {
-    height: 72px;
-    background: var(--white);
-    box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
+  height: 72px;
+  background: var(--white);
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .header__wrapper {
-    width: 956px;
-    display: flex;
-    justify-content: space-between;
-    padding: 17px 0 15px;
+  width: 956px;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 0 15px;
 }
 
 .uber_link {
-    width: 121px;
-    height: 13px;
-    align-self: center;
+  width: 121px;
+  height: 13px;
+  align-self: center;
 }
 
 .header__logo {
-    width: 121px;
-    height: 13px;
+  width: 121px;
+  height: 13px;
 }
 
 .header__input {
-    border: 1px solid var(--border);
-    box-sizing: border-box;
-    border-radius: 2px;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 .header__input::placeholder {
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--font-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-color);
 }
 
 .left_input {
-    width: 65px;
-    height: 40px;
-    padding: 8px 11px;
+  width: 65px;
+  height: 40px;
+  padding: 8px 11px;
 }
 
 .header__span {
-    font-family: var(--main-font);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--light-gray-font);
-    margin: 10px 9px;
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--light-gray-font);
+  margin: 10px 9px;
 }
 
 .header__label {
-    position: relative;
+  position: relative;
 }
 
 .header__label:before {
-    content: url("./img/location.svg");
-    position: absolute;
-    top: 10px;
-    left: 12px;
+  content: url("./img/location.svg");
+  position: absolute;
+  top: 10px;
+  left: 12px;
 }
 
 .right_input {
-    width: 292px;
-    height: 40px;
-    padding: 8px 68px 8px 36px;
+  width: 292px;
+  height: 40px;
+  padding: 8px 68px 8px 36px;
 }
 
 .user_opportunities {
-    display: flex;
+  display: flex;
 }
 
 .basket {
-    width: 19px;
-    height: 22px;
-    margin: 9px 9px 9px 27px;
+  width: 19px;
+  height: 22px;
+  margin: 9px 9px 9px 27px;
 }

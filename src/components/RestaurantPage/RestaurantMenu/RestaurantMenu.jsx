@@ -1,30 +1,48 @@
-import React from 'react';
-import './RestaurantMenu.css';
-import {Link} from "react-router-dom";
+import React from "react";
+import "./RestaurantMenu.css";
+import { Link } from "react-router-dom";
 
 export function RestaurantMenu() {
   return (
     <nav className="restaurant-menu">
       <ul className="nav__menu">
         <li>
-          <Link to="/" className="nav__menu__item"> Закуски </Link>
+          <Link to="/" className="nav__menu__item">
+            {" "}
+            Закуски{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/" className="nav__menu__item"> Салаты </Link>
+          <Link to="/" className="nav__menu__item">
+            {" "}
+            Салаты{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/" className="nav__menu__item"> Супы </Link>
+          <Link to="/" className="nav__menu__item">
+            {" "}
+            Супы{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/" className="nav__menu__item"> Горячие блюда </Link>
+          <Link to="/" className="nav__menu__item">
+            {" "}
+            Горячие блюда{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/" className="nav__menu__item"> Гарниры </Link>
+          <Link to="/" className="nav__menu__item">
+            {" "}
+            Гарниры{" "}
+          </Link>
         </li>
         <li>
-          <Link to="/" className="nav__menu__item"> Десерты </Link>
+          <Link to="/" className="nav__menu__item">
+            {" "}
+            Десерты{" "}
+          </Link>
         </li>
       </ul>
     </nav>
-  )
+  );
 }

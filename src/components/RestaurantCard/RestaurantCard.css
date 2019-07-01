@@ -6,8 +6,9 @@
   text-decoration: none;
 }
 
-.card__img  {
+.card__img {
   width: 308px;
+  object-fit: cover;
 }
 
 .card__restaurant {
