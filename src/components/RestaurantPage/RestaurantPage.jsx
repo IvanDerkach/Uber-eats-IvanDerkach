@@ -1,4 +1,4 @@
-import React from ""react";
+import React from 'react';
 import "./RestaurantPresentation/RestaurantPresentation.css";
 import "./RestaurantMenu/RestaurantMenu.css";
 import "./RestaurantPage.css";
