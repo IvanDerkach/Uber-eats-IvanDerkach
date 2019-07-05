@@ -155,7 +155,7 @@ export const restaurant = {
     raw: 35
   },
   imageUrl:
-    "https://uber-eats-mates.herokuapp.com/images/ed032859-05fa-4761-9a4f-ac5fb7d5859a.jpg.jpg",
+    "https://uber-eats-mates.herokuapp.com/images/ed032859-05fa-4761-9a4f-ac5fb7d5859a.jpg",
   endorsement: "Найпопулярніші янтики та чебуреки",
   tags: [
     { uuid: "MiddleEastern", name: "Близькосхідна", keyName: "MiddleEastern" },
@@ -172,7 +172,7 @@ export const restaurant = {
     ratingCount: "500+"
   },
   largeImageUrl:
-    "https://uber-eats-mates.herokuapp.com/images/48f30dc6-245f-4257-9b6f-8fc00c510fd9.jpg.jpg",
+    "https://uber-eats-mates.herokuapp.com/images/48f30dc6-245f-4257-9b6f-8fc00c510fd9.jpg",
   items: {
     "6f5a0c7a-b401-4f78-ac3b-0de5cea3fc1c": {
       uuid: "6f5a0c7a-b401-4f78-ac3b-0de5cea3fc1c",

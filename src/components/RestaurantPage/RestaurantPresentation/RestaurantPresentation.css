@@ -1,14 +1,18 @@
-.restaurantPresentation-card__background {
-  background: url("../img/rest_background.png") no-repeat center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  margin-top: 72px;
-  padding: 0;
-}
-
 .restaurantPresentation-card__wrapper {
   width: 956px;
+  display: flex;
+  justify-content: center;
+  margin: 72px auto 0;
+  padding: 0;
+  position: relative;
+}
+
+.restaurantPresentation__background {
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  background-position: center center;
 }
 
 .restaurantPresentation-card {
@@ -24,6 +28,7 @@
   padding: 38px;
   box-sizing: border-box;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .restaurantPresentation-card__title {
