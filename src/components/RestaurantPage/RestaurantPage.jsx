@@ -16,10 +16,25 @@ export function RestaurantPage() {
 
       <div className="restaurant-page__wrapper">
         <div className="restaurant-page">
-          <span className="restaurant-page__title">Закуски</span>
           <ul className="restaurant-page__list">
-            {restaurant.sections.map((restaurantItem, i) => {
-              return <ProductCard key={i} restaurantItem={restaurantItem} />;
+            {restaurant.sections.map((section, i) => {
+              return (
+                <div className="restaurant-page__type">
+                  <span
+                    className="restaurant-page__title"
+                    id={`${section.title}`}
+                  >
+                    {section.title}
+                  </span>
+                  <div key={i}>
+                    <div className="restaurant-page__type-unit">
+                      {section.itemUuids.map((item, i) => {
+                        return <ProductCard key={i} id={item} />;
+                      })}
+                    </div>
+                  </div>
+                </div>
+              );
             })}
           </ul>
         </div>

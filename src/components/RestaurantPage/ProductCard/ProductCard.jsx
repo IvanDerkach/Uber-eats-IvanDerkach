@@ -1,37 +1,33 @@
 import React from "react";
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
+import { restaurant } from "../restaurantMenuInfo";
 
 export function ProductCard(props) {
-  const {
-    title,
-    categories,
-    imageUrl,
-    price,
-    itemDescription
-  } = props.restaurant.sections;
-  let prices = price / 100;
-
+  let productImage = restaurant.items[props.id].imageUrl;
   return (
     <li className="product-card">
       <Link to="/" className="product-card__link">
         <div className="product-card__left">
-          {imageUrl !== undefined ? (
-            <img src={imageUrl} alt="" className="product-card__img" />
-          ) : null}
-          <span className="product-card__title">{title}</span>
-          {categories.map((category, i) => {
-            return (
-              <li className="store-card__category" key={i}>
-                {category.keyName}
-              </li>
-            );
-          })}
-          {itemDescription !== undefined ? (
-            <p className="product-card__consist">{itemDescription}</p>
-          ) : null}
-          <span className="product-card__price">{prices}</span>
+          <span className="product-card__title">
+            {restaurant.items[props.id].title}
+          </span>
+
+          <span className="product-card__consist">
+            {restaurant.items[props.id].itemDescription}
+          </span>
+
+          <span className="product-card__price">
+            {restaurant.items[props.id].price / 100} ₴
+          </span>
         </div>
+        {productImage && (
+          <img
+            className="product-card__image"
+            src={restaurant.items[props.id].imageUrl}
+            alt="product"
+          />
+        )}
       </Link>
     </li>
   );

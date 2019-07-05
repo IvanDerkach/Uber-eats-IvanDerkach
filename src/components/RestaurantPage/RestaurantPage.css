@@ -12,6 +12,9 @@
   width: 956px;
 }
 
+/*.restaurant-page__type {*/
+/*}*/
+
 .restaurant-page__title {
   font-family: var(--main-font);
   font-size: 22px;
@@ -28,4 +31,11 @@
   justify-content: space-between;
   list-style: none;
   text-decoration: none;
+}
+
+.restaurant-page__type-unit {
+  display: flex;
+  flex-wrap: wrap;
+  width: 956px;
+  justify-content: space-between;
 }
