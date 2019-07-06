@@ -38,7 +38,7 @@
   text-decoration: none;
 }
 
-.product-card__left {
+.product-card__description {
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -52,4 +52,5 @@
   width: 160px;
   height: 156px;
   object-fit: cover;
+  margin-left: auto;
 }

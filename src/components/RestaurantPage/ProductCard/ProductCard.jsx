@@ -8,7 +8,7 @@ export function ProductCard(props) {
   return (
     <li className="product-card">
       <Link to="/" className="product-card__link">
-        <div className="product-card__left">
+        <div className="product-card__description">
           <span className="product-card__title">
             {restaurant.items[props.id].title}
           </span>
