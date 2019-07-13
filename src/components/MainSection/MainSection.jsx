@@ -1,33 +1,55 @@
 import React from "react";
 import { Search } from "../Search/Search.jsx";
 import "./MainSection.css";
-import "./MainSectionCard.css";
 import { restaurants } from "./restaurants-info.js";
 import { RestaurantCard } from "../RestaurantCard/RestaurantCard.jsx";
 
-export function MainSection() {
-  return (
-    <div className="cards">
-      <div className="cards_wrapper">
-        <Search />
+export class MainSection extends React.Component {
+  constructor(props) {
+    super(props);
 
-        <span className="cards__title">Kyiv Restaurants</span>
+    this.state = {
+      searchValue: ""
+    };
+  }
 
-        <ul className="cards-list">
-          {restaurants.map((restaurant, i) => {
-            return (
-              <RestaurantCard
-                key={i}
-                title={restaurant.title}
-                categories={restaurant.categories}
-                priceBucket={restaurant.priceBucket}
-                etaRange={restaurant.etaRange}
-                imageUrl={restaurant.imageUrl}
-              />
-            );
-          })}
-        </ul>
+  updateSearchValue = searchValue => {
+    this.setState({
+      searchValue: searchValue
+    });
+  };
+
+  render() {
+    return (
+      <div className="cards">
+        <div className="cards_wrapper">
+          <Search onSearchChange={this.updateSearchValue} />
+
+          <span className="cards__title">Kyiv Restaurants</span>
+
+          <ul className="cards-list">
+            {restaurants
+              .filter(restaurant =>
+                restaurant.title
+                  .toLowerCase()
+                  .includes(this.state.searchValue.toLowerCase())
+              )
+              .map((restaurant, i) => {
+                return (
+                  <RestaurantCard
+                    key={i}
+                    title={restaurant.title}
+                    categories={restaurant.categories}
+                    priceBucket={restaurant.priceBucket}
+                    etaRange={restaurant.etaRange}
+                    imageUrl={restaurant.imageUrl}
+                    searchValue={this.state.searchValue}
+                  />
+                );
+              })}
+          </ul>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
