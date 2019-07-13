@@ -14,7 +14,7 @@ export function Header() {
         <div className="delivery-info">
           <label>
             <input
-              className="header__input left_input"
+              className="header__input header__input_left"
               type="text"
               placeholder="ASAP"
             />
@@ -22,7 +22,7 @@ export function Header() {
           <span className="header__span">to</span>
           <label className="header__label">
             <input
-              className="header__input right_input"
+              className="header__input header__input_right"
               type="text"
               placeholder="ul. Tarasivska St, 16"
             />
