@@ -11,7 +11,7 @@ export function Header() {
           <img src={logo} alt="" className="logo header__logo" />
         </a>
 
-        <div className="delivery-info">
+        <div className="header__delivery-info">
           <label>
             <input
               className="header__input header__input_left"
