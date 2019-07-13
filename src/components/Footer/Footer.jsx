@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "./Footer.css";
 import footerLogo from "./img/uber_eats_logo__white.svg";
 
 export function Footer() {

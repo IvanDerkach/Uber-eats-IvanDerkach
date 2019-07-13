@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "./Header.css";
 import logo from "./img/uber_eats_logo.svg";
 import { PersonalCabinet } from "./PersonalCabinet/PersonalCabinet.jsx";
 

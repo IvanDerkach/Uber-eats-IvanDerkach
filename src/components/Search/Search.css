@@ -22,6 +22,7 @@
   height: 22px;
   position: absolute;
   bottom: 15px;
+  cursor: pointer;
 }
 
 .search::placeholder {
