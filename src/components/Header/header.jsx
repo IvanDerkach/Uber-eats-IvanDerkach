@@ -1,8 +1,7 @@
 import React from "react";
 import "./header.css";
-import "../Button/Button.css";
 import logo from "./img/uber_eats_logo.svg";
-import basket from "./img/basket.svg";
+import { PersonalCabinet } from "./PersonalCabinet/PersonalCabinet.jsx";
 
 export function Header() {
   return (
@@ -30,13 +29,7 @@ export function Header() {
           </label>
         </div>
 
-        <div className="user_opportunities">
-          <button className="button">Sign In</button>
-          <button className="button button--black">Register</button>
-          <a className="basket" href="https://www.ubereats.com/ru-UA/checkout/">
-            <img src={basket} alt="basket" />
-          </a>
-        </div>
+        <PersonalCabinet />
       </div>
     </div>
   );
