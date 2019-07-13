@@ -6,9 +6,21 @@
   text-decoration: none;
 }
 
+.card__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
 .card__img {
   width: 308px;
   object-fit: cover;
+  transition: 0.4s;
+}
+
+.card__img:hover {
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .card__restaurant {
