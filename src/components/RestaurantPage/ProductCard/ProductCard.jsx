@@ -6,8 +6,8 @@ import { restaurant } from "../restaurantMenuInfo";
 export function ProductCard(props) {
   let productImage = restaurant.items[props.id].imageUrl;
   return (
-    <Link className="product-card__wrapper" to="/">
-      <li className="product-card">
+    <Link className="product-card" to="/">
+      <li className="product-card__link">
         <div className="product-card__description">
           <span className="product-card__title">
             {restaurant.items[props.id].title}

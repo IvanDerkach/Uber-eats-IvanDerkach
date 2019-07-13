@@ -1,4 +1,4 @@
-.product-card {
+.product-card__link {
   width: 470px;
   height: 160px;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
   margin: 0 0 32px;
 }
 
-.product-card__wrapper {
+.product-card {
   text-decoration: none;
 }
 
