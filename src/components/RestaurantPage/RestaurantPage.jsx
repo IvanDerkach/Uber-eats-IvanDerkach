@@ -14,8 +14,8 @@ export function RestaurantPage() {
       <RestaurantPresentation />
       <RestaurantMenu />
 
-      <div className="restaurant-page__wrapper">
-        <div className="restaurant-page">
+      <div className="restaurant-page">
+        <div className="restaurant-page__wrapper">
           <ul className="restaurant-page__list">
             {restaurant.sections.map((section, i) => {
               return (

@@ -1,10 +1,10 @@
-.restaurant-page__wrapper {
+.restaurant-page {
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
 }
 
-.restaurant-page {
+.restaurant-page__wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
