@@ -21,13 +21,15 @@ export function ProductCard(props) {
             {restaurant.items[props.id].price / 100} ₴
           </span>
         </div>
-        {productImage && (
-          <img
-            className="product-card__image"
-            src={restaurant.items[props.id].imageUrl}
-            alt="product"
-          />
-        )}
+        <div>
+          {productImage && (
+            <img
+              className="product-card__image"
+              src={restaurant.items[props.id].imageUrl}
+              alt="product"
+            />
+          )}
+        </div>
       </li>
     </Link>
   );
