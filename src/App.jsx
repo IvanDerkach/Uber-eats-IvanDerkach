@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import { Header } from "./components/header/header.jsx";
+import { Header } from "./components/Header/header.jsx";
 import { MainSection } from "./components/MainSection/MainSection.jsx";
-import { Footer } from "./components/footer/footer";
+import { Footer } from "./components/Footer/footer";
 import { RestaurantPage } from "./components/RestaurantPage/RestaurantPage.jsx";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 

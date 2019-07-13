@@ -17,4 +17,5 @@
   background-color: var(--btn-color);
   color: var(--white);
   margin-left: 16px;
+  border: 2px solid var(--btn-color);
 }
