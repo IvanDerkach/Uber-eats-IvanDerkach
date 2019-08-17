@@ -7,10 +7,7 @@ export function Header() {
   return (
     <div className="header">
       <div className="header__wrapper">
-        <a
-          className="header__uber-link"
-          href="https://www.ubereats.com/ru-UA/stores/"
-        >
+        <a className="header__uber-link" href="/">
           <img src={logo} alt="" className="logo header__logo" />
         </a>
 
